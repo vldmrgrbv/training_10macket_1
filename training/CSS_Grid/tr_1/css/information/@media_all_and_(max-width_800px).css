@@ -1,0 +1,21 @@
+@import url(.information.css);
+@import url(.information__text.css);
+@import url(.information__img.css);
+@media all and (max-width: 800px) {
+	.information {
+		/*height: 170vh;*/
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 250px;
+		grid-template-areas: "info_text" "info_img";
+	}
+	.information__text {
+		text-align: center;
+		margin: 0;
+		padding: 0px 60px;
+		border: 0;
+	}
+	.information__img {
+		padding: 0;
+		margin: 5px;
+	}
+}

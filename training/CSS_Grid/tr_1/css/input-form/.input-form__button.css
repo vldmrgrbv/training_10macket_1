@@ -1,0 +1,8 @@
+.input-form__button {
+	grid-area: input_button;
+	border: 0;
+	padding: 0;
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+	height: 50px;
+	font-size: 20px;
+}

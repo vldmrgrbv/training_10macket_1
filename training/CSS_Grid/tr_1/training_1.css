@@ -1,0 +1,275 @@
+.information {
+	padding: 15px;
+	background: #EDEDED;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "info_text info_img";
+}
+.information__text {
+	margin: 50px 0;
+	padding: 50px 0;
+	padding-right: 60px;
+	grid-area: info_text;
+	color: #293A43;	
+	border-right: 1px solid #DADADA;
+}
+.information__img {
+	grid-area: info_img;
+	background: url(img/information__img.jpg) top center / contain no-repeat;
+	margin: 50px 0;
+}
+.information__text-p {
+	color: #333333;
+	padding-top: 10px;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: left;
+}
+@media all and (max-width: 800px) {
+	.information {
+		/*height: 170vh;*/
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 250px;
+		grid-template-areas: "info_text" "info_img";
+	}
+	.information__text {
+		text-align: center;
+		margin: 0;
+		padding: 0px 60px;
+		border: 0;
+	}
+	.information__img {
+		padding: 0;
+		margin: 5px;
+	}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+.input-form {
+	padding: 20px;
+	background: #293A43;
+	display: grid;
+	grid-template-columns:  minmax(0,275px) minmax(0,275px) minmax(0,275px) minmax(0px,275px);
+	grid-template-rows: 50px;
+	grid-template-areas: "input_one input_two input_three input_button";
+	grid-gap: 20px;
+	justify-content: center;
+}
+.input-form__input_grid-area-1 {
+	grid-area: input_one;
+}
+.input-form__input_grid-area-2 {
+	grid-area: input_two;
+}
+.input-form__input_grid-area-3 {
+	grid-area: input_three;
+}
+.input-form__button {
+	grid-area: input_button;
+	border: 0;
+	padding: 0;
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+	height: 50px;
+	font-size: 20px;
+}
+.input-form__input {
+	border: 0;
+	background: #354A56;
+	color: #000;
+	font-style: italic;
+	font-size: 15px;
+	padding: 0 10px;
+}
+@media all and (min-width: 500px) and (max-width: 800px) {
+	.input-form {
+		grid-template-columns:  minmax(0,1fr) minmax(0,1fr);
+		grid-template-rows: 50px 50px;
+		grid-template-areas: "input_one input_two" "input_three input_button";
+	}
+}
+@media all and (max-width: 500px) {
+	.input-form {
+		grid-template-columns:  minmax(0,1fr);
+		grid-template-rows: 50px 50px 50px 50px;
+		grid-template-areas: "input_one" "input_two" "input_three" "input_button";
+	}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+.grid_sec {
+	padding: 40px;
+	display: grid;
+	grid-template-columns: minmax(0,290px) minmax(0,290px) minmax(0,290px) minmax(0,290px);
+	grid-template-rows: 100px 1fr 1fr 50px;
+	grid-template-areas: 
+	"sec__header sec__header sec__header sec__header"
+	"sec__cell_three sec__cell_four sec__cell_one sec__cell_one"
+	"sec__cell_two sec__cell_two sec__cell_five sec__cell_six"
+	"sec__button sec__button sec__button sec__button";
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	grid-gap: 20px;
+}
+.grid_sec__header {
+	grid-area: sec__header;
+	justify-self: left;
+	color: #293A43;
+	padding-top: 20px;
+}
+.grid_sec__cell-1 {
+	grid-area: sec__cell_one;
+}
+.grid_sec__cell-2 {
+	grid-area: sec__cell_two;
+}
+.grid_sec__cell-3 {
+	grid-area: sec__cell_three;
+}
+.grid_sec__cell-4 {
+	grid-area: sec__cell_four;
+}
+.grid_sec__cell-5 {
+	grid-area: sec__cell_five;
+}
+.grid_sec__cell-6 {
+	grid-area: sec__cell_six;
+}
+.grid_sec__button {
+	grid-area: sec__button;
+	width: 200px;
+	font-size: 20px;
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+}
+.grid_sec__div {
+	overflow: hidden;
+	width: 100%;
+	height: 250px;
+}
+.grid_sec__img {
+	overflow: hidden;
+	height: 250px;
+	width: 100%;
+	transition: 0.5s;
+}
+.grid_sec__img:hover {	
+	transition: 0.3s;
+	transform: scale(1.1);
+}
+.grid_sec__img-1 {
+	background: url(img/grid_sec_cell-1.jpg) center center / cover no-repeat;
+}
+.grid_sec__img-2 {
+	background: url(img/grid_sec_cell-2.jpg) center center / cover no-repeat;
+}
+.grid_sec__img-3 {
+	background: url(img/grid_sec_cell-3.jpg) center center / cover no-repeat;
+}
+.grid_sec__img-4 {
+	background: url(img/grid_sec_cell-4.jpg) center center / cover no-repeat;
+}
+.grid_sec__img-5 {
+	background: url(img/grid_sec_cell-5.jpg) center center / cover no-repeat;
+}
+.grid_sec__img-6 {
+	background: url(img/grid_sec_cell-6.jpg) center center / cover no-repeat;
+}
+.grid_sec__cell {
+	transition: 0.5s;
+	background: #F7F7F7;
+	text-decoration: none;
+	color: #666666;
+}
+.grid_sec__cell:hover {
+	transition: 0.3s;
+	background: #ededed;
+}
+.grid_sec__p {
+	color: #3B3333;
+	margin: 20px;
+	line-height: 25px;
+}
+@media all and (min-width: 990px) and (max-width: 1200px) {
+	.grid_sec {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 100px 1fr 1fr 50px;
+		grid-template-areas: 
+		"sec__header sec__header sec__header"
+		"sec__cell_three sec__cell_four sec__cell_one"
+		"sec__cell_two sec__cell_five sec__cell_six"
+		"sec__button sec__button sec__button";
+	}
+}
+@media all and (min-width: 768px) and (max-width: 990px) {
+	.grid_sec {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 1fr 1fr 50px;
+		grid-template-areas: 
+		"sec__header sec__header"
+		"sec__cell_three sec__cell_four "
+		"sec__cell_one sec__cell_two"
+		"sec__cell_five sec__cell_six"
+		"sec__button sec__button";
+	}
+}
+@media all and (max-width: 768px) {
+	.grid_sec {
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+		grid-template-areas: 
+		"sec__header"
+		"sec__cell_three"
+		"sec__cell_four"
+		"sec__cell_one"
+		"sec__cell_two"
+		"sec__cell_five"
+		"sec__cell_six"
+		"sec__button";
+	}
+	.grid_sec__header {
+		justify-self: center;
+		padding-top: 20px;
+		font-size: 30px;
+	}
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+.footer {
+	height: 225px;
+	background: #1A242A;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "footer_p_one" "footer_p_two";
+	justify-items: center;
+}
+.footer__p-1 {
+	grid-area: footer_p_one;
+	align-self: end;
+	margin: 0;
+}
+.footer__span {
+	font-size: 25px;
+	color: #707476;
+	font-style: bold;
+}
+.footer__p-2 {
+	grid-area: footer_p_two;
+}
+.footer__p {
+	font-size: 20px;
+	text-align: center;
+	color: #4E5355;
+}
+
+/*
+gulp
+cmd ncu - watch uploads 
+ncu -i - install uploads
+::before, ::after;+
+sass
+*/

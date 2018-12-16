@@ -1,0 +1,7 @@
+@media all and (min-width: 500px) and (max-width: 800px) {
+	.input-form {
+		grid-template-columns:  minmax(0,1fr) minmax(0,1fr);
+		grid-template-rows: 50px 50px;
+		grid-template-areas: "input_one input_two" "input_three input_button";
+	}
+}

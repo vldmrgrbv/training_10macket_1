@@ -1,0 +1,18 @@
+.grid_sec__cell-1 {
+	grid-area: sec__cell_one;
+}
+.grid_sec__cell-2 {
+	grid-area: sec__cell_two;
+}
+.grid_sec__cell-3 {
+	grid-area: sec__cell_three;
+}
+.grid_sec__cell-4 {
+	grid-area: sec__cell_four;
+}
+.grid_sec__cell-5 {
+	grid-area: sec__cell_five;
+}
+.grid_sec__cell-6 {
+	grid-area: sec__cell_six;
+}

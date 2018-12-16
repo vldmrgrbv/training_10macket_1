@@ -1,0 +1,14 @@
+.button-template {
+	background: #F0650D;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+}
+.button-template:hover {
+	background: #F37423;
+}
+.button-template:active {
+	background: #d95c0d;
+}

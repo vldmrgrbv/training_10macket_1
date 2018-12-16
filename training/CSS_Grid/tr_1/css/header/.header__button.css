@@ -1,0 +1,10 @@
+.header__button {	
+	width: 200px;
+	justify-self: center;
+	align-self: center;
+	height: 50px;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+}

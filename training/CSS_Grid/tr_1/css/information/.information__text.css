@@ -1,0 +1,8 @@
+.information__text {
+	margin: 50px 0;
+	padding: 50px 0;
+	padding-right: 60px;
+	grid-area: info_text;
+	color: #293A43;	
+	border-right: 1px solid #DADADA;
+}

@@ -1,0 +1,4 @@
+.grid__cell-4 {
+	grid-area: cell_four;
+	background: rgba(73,88,95,0.8) url('../../img/grid_img-4.jpg') center center / cover no-repeat;
+}

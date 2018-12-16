@@ -1,0 +1,15 @@
+.grid_sec {
+	padding: 40px;
+	display: grid;
+	grid-template-columns: minmax(0,290px) minmax(0,290px) minmax(0,290px) minmax(0,290px);
+	grid-template-rows: 100px 1fr 1fr 50px;
+	grid-template-areas: 
+	"sec__header sec__header sec__header sec__header"
+	"sec__cell_three sec__cell_four sec__cell_one sec__cell_one"
+	"sec__cell_two sec__cell_two sec__cell_five sec__cell_six"
+	"sec__button sec__button sec__button sec__button";
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	grid-gap: 20px;
+}

@@ -1,0 +1,6 @@
+.grid_sec__header {
+	grid-area: sec__header;
+	justify-self: left;
+	color: #293A43;
+	padding-top: 20px;
+}

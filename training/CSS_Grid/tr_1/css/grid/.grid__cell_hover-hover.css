@@ -1,0 +1,5 @@
+.grid__cell_hover {
+	opacity: 1;
+	transition: 1s;
+	background-blend-mode: multiply;	
+}

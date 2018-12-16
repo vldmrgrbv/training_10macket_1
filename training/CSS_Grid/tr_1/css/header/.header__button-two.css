@@ -1,0 +1,15 @@
+.header__button-two {
+	grid-area: header__button_two;
+	grid-column: 3 / 4;
+	grid-row: 2;
+	background: #4B5A65;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 3px;
+}
+.header__button-two:hover {
+	background: #566774;
+}
+.header__button-two:active {
+	background: #404d56;
+}

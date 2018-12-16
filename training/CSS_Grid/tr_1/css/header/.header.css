@@ -1,0 +1,19 @@
+.header {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr minmax(200px,200px) minmax(200px,200px) 1fr;
+	grid-template-rows: auto;
+	/*grid-template-areas: 
+	". header__text header__text header__text header__text ."
+	". . header__button_one header__button_two . .";*/
+	grid-column-gap: 20px;
+	justify-content: center;
+	align-content: center;
+	background: rgba(29,45,53,0.9) url(../../img/header.jpg) center center / cover  no-repeat;
+	/*background-color, background-image, background-position, background-size, background-repeat, background-origin, background-clip и background-attachment*/
+	background-blend-mode: multiply;
+
+}

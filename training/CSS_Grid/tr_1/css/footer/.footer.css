@@ -1,0 +1,9 @@
+.footer {
+	height: 225px;
+	background: #1A242A;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "footer_p_one" "footer_p_two";
+	justify-items: center;
+}

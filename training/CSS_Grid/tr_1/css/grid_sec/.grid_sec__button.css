@@ -1,0 +1,6 @@
+.grid_sec__button {
+	grid-area: sec__button;
+	width: 200px;
+	font-size: 20px;
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+}

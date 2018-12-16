@@ -1,0 +1,3 @@
+- gulp, bower
+- folders: img, fonts, js, libs, css, sass
+- in sass: _vars.sass - all var in LP

@@ -1,0 +1,12 @@
+@media all and (min-width: 768px) and (max-width: 990px) {
+	.grid_sec {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 1fr 1fr 1fr 50px;
+		grid-template-areas: 
+		"sec__header sec__header"
+		"sec__cell_three sec__cell_four "
+		"sec__cell_one sec__cell_two"
+		"sec__cell_five sec__cell_six"
+		"sec__button sec__button";
+	}
+}

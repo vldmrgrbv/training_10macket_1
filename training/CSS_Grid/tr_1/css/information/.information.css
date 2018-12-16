@@ -1,0 +1,8 @@
+.information {
+	padding: 15px;
+	background: #EDEDED;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "info_text info_img";
+}

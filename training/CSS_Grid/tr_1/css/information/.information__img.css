@@ -1,0 +1,5 @@
+.information__img {
+	grid-area: info_img;
+	background: url(../../img/information__img.jpg) top center / contain no-repeat;
+	margin: 50px 0;
+}

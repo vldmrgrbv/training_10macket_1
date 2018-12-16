@@ -1,0 +1,5 @@
+.footer__p-1 {
+	grid-area: footer_p_one;
+	align-self: end;
+	margin: 0;
+}

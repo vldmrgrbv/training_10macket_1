@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="node_modules\jquery\dist\jquery.min.js"></script>
+	<title>JS</title>
+	<script>
+			// // calculating seconds in days
+			// var i = prompt("Enter amount day(s):");
+			// var ch = i * 24 * 60 * 60;
+			// alert('In '+i+' day(s) '+ch+' seconds..');
+			
+			// // obj array
+			// var obj = {1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday', 6: 'Saturday', 7: 'Sunday'};
+			// alert(obj[2]);
+
+			// // multidimensional array
+			// var ch = [[1,2,3],[4,5,6],[7,8,9]];
+			// alert(ch[1][0]);
+			// --- variant second with prompt choose
+			// var obj = {
+			// 	en: {1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday', 6: 'Saturday', 7: 'Sunday'},
+			// 	ru: {1: 'Понедельник', 2: 'Вторник', 3: 'Среда', 4: 'Четверг', 5: 'Пятница', 6: 'Суббота', 7: 'Воскресенье'}
+			// };
+			// var lang = prompt("Enter language(ru/en):");
+			// var day = prompt("Enter number day(1-7):");
+			// alert('You choose: '+obj[lang][day]);
+			
+			// // cycles
+			// var n = 1000;
+			// for(var i = 0; i != -1; i++) {
+			// 	n = n/2;
+			// 	document.write(n+'<br>');
+			// 	if(n < 50) break;
+			// }
+			// document.write('n = '+n+'<br>'+'count = '+i);
+			
+			// // math function
+			// var mas = [4,2,5,19,13,0,10];
+			// var st = 0;
+			// for(var i = 0; i < mas.length; i++) {
+			// 	st += Math.pow(mas[i],3);
+			// }
+			// document.write((Math.random()));
+
+			// var arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+			// arr.splice(2, 3);
+			// console.log(arr);
+			
+			// function, which edit first letter everything word in upper case
+			// var str = prompt("Enter text:");
+			// var arr = str.split(' ');
+			// str = '';
+			// for(i = 0; i < arr.length; i++) {
+			// 	ucfirst(arr[i]);
+			// 	document.write(str+' ');
+			// }
+			// function ucfirst(arr) {
+			// 	var arr_2 = arr.split('');
+			// 	arr_2[0] = arr_2[0].toUpperCase();
+			// 	str = arr_2.join('');
+			// 	return str;
+			// }
+
+			//  edit line '123456' on '214365'
+			// var str = '123456';
+			// document.write(replace_symbol(str));
+
+			// function replace_symbol(str_f) {
+			// 	// var new_str = ''; //second variant
+			// 	// str_f = str_f.split(''); //second variant
+			// 	for(i = 1; i < str_f.length; i+=2) {
+			// 		// new_str += str_f[i+1] + str_f[i]; //second variant
+			// 		str_f = str_f.replace((i+1),i);
+			// 		str_f = str_f.replace(i,(i+1));
+			// 	}
+			// 	// return new_str; //second variant
+			// 	return str_f;
+			// }
+
+			//practice functions
+			// // recursion
+			// var mas = [1,2,3,4,5,6,7,8];
+			// var i = mas.length-1;
+			// conclusion_recursion(mas, i);
+			// function conclusion_recursion(mas_f, i_f) {				
+			// 	if(i_f >= 0) {
+			// 		document.write(mas_f[i_f]+'<br>');
+			// 		conclusion_recursion(mas_f, --i_f);
+			// 	}
+			// }
+			// // second recursion
+			// var num = prompt("Enter number");
+			// fun_sum_num(num);
+
+			// function fun_sum_num(num_f) {
+			// 	var sum = 0;
+			// 	num_f = String(num_f);
+			// 	num_f = num_f.split('');
+			// 	for(i = 0; i < num_f.length; i++) {
+			// 		sum += Number(num_f[i]);
+			// 	}
+			// 	if(sum > 9) {
+			// 		document.write('> ' + sum + '<br>');
+			// 		fun_sum_num(sum);
+			// 	}
+			// 	else {
+			// 		document.write('<= ' + sum);
+			// 	}
+			// }
+			
+			// DOM
+			// function func(elem_1) {
+			// 	var elem_2 = document.querySelector('p');
+			// 	 elem_2.innerHTML = elem_1.value;
+			// 	} // text repeat
+			
+			// // Date
+			
+			// // // current date with add zero for necessary
+			// var date = new Date();
+			// document.write(func(date.getHours())+':'+func(date.getMinutes())+':'+func(date.getSeconds())+' '+func(date.getDate())+'.'+func(date.getMonth())+'.'+func(date.getFullYear()));
+			// function func(date) {
+			// 	if(date < 10) {
+			// 		return date = '0'+date;
+			// 	}
+			// 	else 
+			// 		return date;
+			// }
+
+			// // // conclustion current day week
+			// var date = new Date();			
+			// document.write(func_cur_day(date.getDay()));
+			// function func_cur_day(day) {
+			// 	var mas_days = ['sun','mon','tue','wed','thu','fri','sat'];
+			// 	return mas_days[day];
+			// }
+
+			// // // conclusion count year with 1970 before current
+			// var date = new Date();
+			// document.write(date.getTime()/1000/60/60/24/365);
+			
+			// // // clock
+			// function fun() {
+			// 	window.setInterval(timer, 1);
+			// }
+			// function timer() {
+			// 		var elem = document.getElementById('clock');
+			// 		var date = new Date();
+			// 		elem.innerHTML = (func(date.getHours())+':'+func(date.getMinutes())+':'+func(date.getSeconds())+':'+func_millisec(date.getMilliseconds()));
+			// }
+			// function func(date) {
+			// 	if(date < 10) return '0'+date;
+			// 	else return date;
+			// }
+			// // additional function for getMilliseconds()
+			// function func_millisec(date) {
+			// 	if(date < 100) return '0'+date;
+			// 	if(date < 10) return '0'+date;
+			// 	else return date;
+			// }
+
+			// // // timer to end day
+			// function fun() {
+			// 	window.setInterval(timer, 1000);
+			// }
+			// function timer() {
+			// 	var elem = document.getElementById('timer');
+			// 	var date_now = new Date();
+			// 	var date_end = new Date(2018,8,16,23,59,59);
+			// 	var hours = date_end.getHours()-date_now.getHours();
+			// 	var minutes = date_end.getMinutes()-date_now.getMinutes();
+			// 	var seconds = date_end.getSeconds()-date_now.getSeconds();
+			// 	elem.innerHTML = func(hours)+':'+ func(minutes)+':'+ func(seconds);
+			// }
+			// function func(date) {
+			// 	if(date < 10) return '0'+date;
+			// 	else return date;
+			// }
+			// // // slider of picrutes 
+			// function fun() {				
+			// 	window.i = 2;			
+			// 	window.setInterval(timer, 1000);
+			// }			
+			// function timer() {	
+			// 	var src_img;	
+			// 	var elem = document.getElementsByTagName('img');
+			// 	for(var i = 0; i < 4; i++) {	
+			// 		if(i<3)	elem[i].src = window.i +'.png';		
+			// 		window.i = window.i + 1; 	
+			// 		if(window.i > 3) window.i = 1;			
+			// 	}				
+			// }
+		</script>
+		<style>
+		/*event clientX:clientY (-offsetLeft and offsetTop)*/
+	/*	.elem {
+			width: 1000px;
+			height: 600px;
+			border: 1px solid black;
+			position: absolute;
+			left: 20%;
+			top: 20px;
+			}*/
+		</style>
+	</head>
+	<body> <!-- <body onload="fun()"> -->
+
+
+		<!-- text repeat -->
+		<!-- <input type="text" value="" onkeyup="func(this)">
+			<p ></p> --> 
+			<!-- clock -->
+			<!-- <p id="clock" >00:00:00</p> -->
+			<!-- timer -->
+		<!-- <p>До конца дня осталось:</p>
+			<p id="timer">00:00:00</p> -->
+			<!-- slider of pictures -->
+		<!-- <p id="slider">
+			<img src="1.png" alt="">
+			<img src="2.png" alt="">
+			<img src="3.png" alt="">		
+		</p> -->
+		<!-- developments forms and test count symbols -->
+	<!-- <input type="text" data-length="5">
+	<input type="text" data-length="5">
+	<input type="text" data-length="5">
+	<p id="test"></p> -->
+	
+	<!-- event clientX:clientY (-offsetLeft and offsetTop) -->
+	<!-- <div class="elem">	
+	</div> -->
+	<!-- JQuery fadeTo and mouseout-mouseover -->
+	<!-- <div id="foo" class="elem" style="width: 200px;height: 200px; border: 1px solid green; opacity: 0.1;">
+		Block with text.
+	</div> -->
+
+	
+
+	<!-- <input type="submit" value="Click me!" onclick="func()"> -->
+</body>
+<script>
+			//developments forms and test count symbols
+			// var elem = document.getElementsByTagName('input');
+			// for(var i = 0; i < elem.length; i++) {
+			// 	elem[i].addEventListener('keyup', func);
+			// }
+			// function func() {
+			// 	var dt_length = this.getAttribute('data-length');
+			// 	var dt_enter = this.value.length;
+			// 	if(dt_enter < dt_length) {
+			// 		this.style.cssText = 'border: 1px solid #FF0A1A;';
+			// 	}
+			// 	else {
+			// 		this.style.cssText = 'border: 1px solid #0FFF0F;';
+			// 	}
+			// }
+			// event clientX:clientY (-offsetLeft and offsetTop)
+			// var elem = document.querySelector('.elem');
+			// elem.addEventListener('mousemove', func);
+
+			// function func(event) {				
+			// 	this.innerHTML = (event.clientX-elem.offsetLeft) + ':' + (event.clientY-elem.offsetTop) ;
+			// }
+			
+			//JQuery 
+			// fadeTo and mouseout-mouseover #clearly!
+			// $('.elem').mouseout(function() {
+			// 	$('.elem').fadeTo(500,0.1);
+			// });
+			// $('.elem').mouseover(function() {
+			// 	$('.elem').stop(true);
+			// 	$('.elem').fadeTo(500,1);
+			// })
+
+			
+
+			// $('#foo').animate({width:'+=200'}, 2000); // перемещение элемента на 200 пикселей вправо, за 2 секунды
+			// $('#foo').slideUp();  // сворачивание элемента
+			// $('#foo').stop();
+
+
+		</script>
+		</html>

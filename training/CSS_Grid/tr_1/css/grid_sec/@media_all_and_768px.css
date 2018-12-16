@@ -1,0 +1,20 @@
+@media all and (max-width: 768px) {
+	.grid_sec {
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+		grid-template-areas: 
+		"sec__header"
+		"sec__cell_three"
+		"sec__cell_four"
+		"sec__cell_one"
+		"sec__cell_two"
+		"sec__cell_five"
+		"sec__cell_six"
+		"sec__button";
+	}
+	.grid_sec__header {
+		justify-self: center;
+		padding-top: 20px;
+		font-size: 30px;
+	}
+}

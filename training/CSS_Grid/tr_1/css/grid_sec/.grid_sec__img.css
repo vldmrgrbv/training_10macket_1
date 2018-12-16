@@ -1,0 +1,6 @@
+.grid_sec__img {
+	overflow: hidden;
+	height: 250px;
+	width: 100%;
+	transition: 0.5s;
+}

@@ -1,0 +1,5 @@
+.header__button-one {
+	grid-area: header__button_one;
+	grid-column: 2 / 3;
+	grid-row: 2;	
+}

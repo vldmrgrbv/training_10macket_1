@@ -1,0 +1,11 @@
+.header__text {
+	grid-area: header__text;
+	grid-column: 1 / 5;
+	grid-row: 1;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
+	color: #fff;
+	font-size: 60px;
+	-moz-user-select: none; /*Cancel chance highlight text*/
+}

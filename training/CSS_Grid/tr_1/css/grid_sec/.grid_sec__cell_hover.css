@@ -1,0 +1,4 @@
+.grid_sec__cell:hover {
+	transition: 0.3s;
+	background: #ededed;
+}

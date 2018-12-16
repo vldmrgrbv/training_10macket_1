@@ -1,0 +1,14 @@
+{
+  "name": "onscreen",
+  "_cacheHeaders": {
+    "ETag": "W/\"1a20-1iKDOdlvn/y9z1z+h1522qXe43g\"",
+    "Last-Modified": "Mon, 07 Aug 2017 18:35:02 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"1a20-1i",
+  "main": "index.js",
+  "_source": "https://unpkg.com/onscreen/dist/on-screen.umd.min.js",
+  "_target": "*",
+  "_originalSource": "https://unpkg.com/onscreen/dist/on-screen.umd.min.js",
+  "_direct": true
+}
